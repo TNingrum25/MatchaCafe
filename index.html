@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caf� Matcha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Caf� Matcha</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sakura Falling Area -->
+    <div id="sakura-container">
+        <div class="hero">
+            Experience the Best Matcha in Town
+            
+
+        </div>
+        <div class="content">
+            <h2>Our Specialties</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <h3>Matcha Latte</h3>
+                    <p>Rich and creamy matcha goodness.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Matcha Ice Cream</h3>
+                    <p>Refreshing and sweet matcha treat.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Matcha Cake</h3>
+                    <p>Soft and fluffy with a hint of matcha.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="box-container">
+            <div class="box-content">
+                <h2>Order Online</h2>
+                <form id="orderForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="item">Select Your Item:</label>
+                    <select id="item" name="item" required>
+                        <option value="matcha-latte">Matcha Latte</option>
+                        <option value="matcha-ice-cream">Matcha Ice Cream</option>
+                        <option value="matcha-cake">Matcha Cake</option>
+                    </select><br><br>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required><br><br>
+
+                    <label for="address">Delivery Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+                    <button type="submit">Place Order</button>
+                </form>
+                <div id="orderResponse"></div>
+            </div>
+        </div>
+    
+
+        <div class="contact">
+            <h2>Visit Us</h2>
+            <p>123 Matcha Street, Scottsdale, AZ</p>
+            <p>Open Daily: 8 AM - 8 PM</p>
+        </div>
+
+    
+
+    <!-- Link to the external JavaScript file -->
+    <script src="JavaScript.js"></script>
+
+    <script src="sakura.js"></script>
+
+</body>
+</html>
