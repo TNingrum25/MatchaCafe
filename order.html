@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Matcha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="sub-page">
+    <header class="site-header">
+        <div class="brand">
+            <span class="brand-mark">??</span>
+            <div class="brand-text">
+                <h1>Cafe Matcha</h1>
+                <p>Tea rituals, modern craft</p>
+            </div>
+        </div>
+        <nav class="site-nav">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="menu.html">Menu</a></li>
+                <li><a class="nav-link is-active" href="order.html">Order Online</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="header-cta" onclick="location.href='order.html'">Order Matcha</button>
+    </header>
+
+    <main class="page-shell">
+        <section class="page-hero">
+            <div>
+                <p class="eyebrow">Ready in under 30 minutes</p>
+                <h2>Order online</h2>
+                <p>Pick up a calm matcha moment or have it delivered to your door.</p>
+            </div>
+            <div class="page-hero-chip">Pickup or Delivery</div>
+        </section>
+
+        <section class="order-section modern">
+            <div class="order-card">
+                <h2>Place your order</h2>
+                <p>We will whisk each drink fresh after you checkout.</p>
+                <form id="orderForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="item">Select Your Item</label>
+                    <select id="item" name="item" required>
+                        <option value="matcha-latte">Matcha Latte</option>
+                        <option value="matcha-ice-cream">Matcha Ice Cream</option>
+                        <option value="matcha-cake">Matcha Cake</option>
+                    </select>
+
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+
+                    <button type="submit">Place Order</button>
+                </form>
+                <div id="orderResponse"></div>
+            </div>
+            <div class="order-aside">
+                <h3>Order tips</h3>
+                <p>Pair with a Kyoto roll cake for the perfect balance.</p>
+                <div class="order-note">
+                    <strong>Peak hours</strong>
+                    <p>Weekdays 7-9 AM and 2-4 PM.</p>
+                </div>
+                <div class="order-note">
+                    <strong>Pickup window</strong>
+                    <p>We hold orders for 20 minutes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="JavaScript.js"></script>
+
+</body>
+</html>

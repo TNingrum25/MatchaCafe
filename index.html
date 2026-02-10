@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Matcha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+    <header class="site-header">
+        <div class="brand">
+            <span class="brand-mark">??</span>
+            <div class="brand-text">
+                <h1>Cafe Matcha</h1>
+                <p>Tea rituals, modern craft</p>
+            </div>
+        </div>
+        <nav class="site-nav">
+            <ul>
+                <li><a class="nav-link is-active" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="menu.html">Menu</a></li>
+                <li><a class="nav-link" href="order.html">Order Online</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="header-cta" onclick="location.href='order.html'">Order Matcha</button>
+    </header>
+
+    <main>
+        <!-- Sakura Falling Area -->
+        <section id="sakura-container" class="hero-shell">
+            <div class="hero-panel">
+                <p class="eyebrow">Uji origin • stone-ground daily</p>
+                <h2>Quiet mornings, bright green energy.</h2>
+                <p class="hero-copy">
+                    A modern tea house with a Japanese soul. Sip ceremonial matcha,
+                    whisked to velvet, and pair it with delicate pastries inspired by Kyoto.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="order.html">Start an Order</a>
+                    <a class="btn ghost" href="menu.html">Browse the Menu</a>
+                </div>
+                <div class="hero-highlights">
+                    <div>
+                        <span class="metric">24h</span>
+                        <span class="label">Stone milled batches</span>
+                    </div>
+                    <div>
+                        <span class="metric">4.9</span>
+                        <span class="label">Local rating</span>
+                    </div>
+                    <div>
+                        <span class="metric">12</span>
+                        <span class="label">Matcha creations</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="matcha-orb"></div>
+                <div class="ceremony-card">
+                    <h3>Matcha Ceremony</h3>
+                    <p>Whisked to a soft, emerald foam with a hint of vanilla rice.</p>
+                    <span class="tag">New</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="ritual-section">
+            <div class="ritual-copy">
+                <h2>Japanese calm, Scottsdale light.</h2>
+                <p>
+                    Our space blends washi textures, cedar lines, and a modern matcha bar.
+                    Every drink is brewed with mindful precision, grounded in tradition.
+                </p>
+            </div>
+            <div class="ritual-cards">
+                <article class="ritual-card">
+                    <h3>Stone-Ground</h3>
+                    <p>Single-origin Uji leaves milled daily for freshness.</p>
+                </article>
+                <article class="ritual-card">
+                    <h3>Seasonal Pairings</h3>
+                    <p>Yuzu, sesame, and hojicha accents across the menu.</p>
+                </article>
+                <article class="ritual-card">
+                    <h3>Quiet Studio</h3>
+                    <p>Soft lighting, low seating, and warm cedar notes.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <div class="section-head">
+                <h2>Matcha essentials</h2>
+                <p>Designed for a slow sip and a fast smile.</p>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <h3>Matcha Latte</h3>
+                    <p>Silky oat milk and ceremonial blend.</p>
+                    <span class="price">$6.50</span>
+                </article>
+                <article class="product-card">
+                    <h3>Cloud Matcha</h3>
+                    <p>Cold-whisked, topped with cream foam.</p>
+                    <span class="price">$7.25</span>
+                </article>
+                <article class="product-card">
+                    <h3>Kyoto Roll Cake</h3>
+                    <p>Green tea sponge with bean cream.</p>
+                    <span class="price">$5.75</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="order-section">
+            <div class="order-card">
+                <h2>Order Online</h2>
+                <p>Pickup or delivery in under 30 minutes.</p>
+                <form id="orderForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="item">Select Your Item</label>
+                    <select id="item" name="item" required>
+                        <option value="matcha-latte">Matcha Latte</option>
+                        <option value="matcha-ice-cream">Matcha Ice Cream</option>
+                        <option value="matcha-cake">Matcha Cake</option>
+                    </select>
+
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+
+                    <button type="submit">Place Order</button>
+                </form>
+                <div id="orderResponse"></div>
+            </div>
+            <div class="order-aside">
+                <h3>Visit Us</h3>
+                <p>123 Matcha Street, Scottsdale, AZ</p>
+                <p>Open Daily: 8 AM - 8 PM</p>
+                <div class="mini-map">
+                    <span>Zen courtyard view</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="JavaScript.js"></script>
+
+    <script src="sakura.js"></script>
+
+</body>
+</html>
